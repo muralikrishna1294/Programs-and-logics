@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void total_bits(int num){
+int count =0;
+while(num!=0){
+    count++;
+    
+    num=num>>1;
+}
+   
+   printf("\ncount =%d\n",count);
+}
+
+int main()
+{
+   
+   total_bits(15);
+   total_bits(40);
+   
+  
+   
+    return 0;
+}
