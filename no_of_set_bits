@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+void set_bit(int num){
+
+    int count =0;
+    while(num!=0){
+        count++;
+       num =num&num-1;
+        
+    }
+    printf("\n count =%d\n",count);
+    
+}
+
+int main()
+{
+   
+   set_bit(15);
+   set_bit(10);
+   
+  
+   
+    return 0;
+}
