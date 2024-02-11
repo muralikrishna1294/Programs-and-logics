@@ -1,0 +1,27 @@
+// C Program for
+// Check whether given number is power of 2 are efficiently
+#include <stdio.h>
+
+// Detect that given number are part of power of 2 or not
+void isPowerTwo(int number)
+{
+	if (number <= 0 || (number & (number - 1)) != 0)
+	{
+		printf("%d Is not a power of two\n", number);
+	}
+	else
+	{
+		printf("%d Is a power of two\n", number);
+	}
+}
+int main()
+{
+	// Test Case
+	isPowerTwo(4);
+	isPowerTwo(7);
+	isPowerTwo(32);
+	isPowerTwo(63);
+	isPowerTwo(3542);
+	isPowerTwo(128);
+	return 0;
+}
