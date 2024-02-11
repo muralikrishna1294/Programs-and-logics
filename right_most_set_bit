@@ -1,0 +1,33 @@
+
+
+#include <stdio.h>
+
+
+
+// function to find the rightmost set bit
+int PositionRightmostSetbit(int n)
+{
+	if (n == 0)
+		return 0;
+	// Position variable initialize with 1
+	// m variable is used to check the set bit
+	int position = 1;
+	int m = 1;
+
+	while (!(n & m)) {
+
+		// left shift
+		m = m << 1;
+		position++;
+	}
+	return position;
+}
+// Driver Code
+int main()
+{
+	int n = 3;
+	// function call
+	int count =PositionRightmostSetbit(3);
+	printf("%d",count);
+	return 0;
+}
