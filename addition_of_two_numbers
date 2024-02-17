@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+void additon_two_nunbers(int a,int b){
+    
+    while(b!=0){
+    int carry =  a&b;
+    a = a^b;
+    b =carry<<1;
+    }
+    printf("\n additon_two_nunbers =%d\n",a);
+    
+    
+}
+int main()
+{
+    
+    
+    
+    
+    additon_two_nunbers(2,5);
+     additon_two_nunbers(11,13);
+     additon_two_nunbers(50,50);
+
+
+
+    return 0;
+}
